@@ -14,7 +14,7 @@ public class Phonebook {
 
             for (Enumeration<Contact> e = this.contacts.elements();e.hasMoreElements();){
                 Contact contact = e.nextElement();
-                System.out.println(contact.name +", " + contact.number);
+                System.out.println(contact.getName() +", " + contact.getNumber());
             }
 
         }
