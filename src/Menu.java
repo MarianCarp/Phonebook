@@ -5,6 +5,6 @@ public class Menu {
         System.out.println("[2] Create");
         System.out.println("[3] Show");
         System.out.println("[4] Edit");
-        System.out.println("[5] delete");
+        System.out.println("[5] Delete");
     }
 }

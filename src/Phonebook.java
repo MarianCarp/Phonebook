@@ -2,7 +2,7 @@ import java.util.Enumeration;
 import java.util.Stack;
 
 public class Phonebook {
-    Stack<Contact> contacts;
+    Stack<Contact> contacts = new Stack<>();
     Phonebook (){
 
     }
@@ -20,15 +20,16 @@ public class Phonebook {
         }
     }
     public void add(){
+        System.out.println("Contact added");
 
     }
     public void show(){
-
+        System.out.println("Look, this are your contacts");
     }
     public void edit(){
-
+        System.out.println("Edit a contact");
     }
     public void delete(){
-
+        System.out.println("Delete it now");
     }
 }
