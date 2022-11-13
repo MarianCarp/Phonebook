@@ -1,27 +1,20 @@
+import java.util.ArrayList;
 import java.util.Enumeration;
+import java.util.List;
 import java.util.Stack;
 
 public class Phonebook {
-    Stack<Contact> contacts = new Stack<>();
-    Phonebook (){
+    public List Contacts = new ArrayList<>();
+    public Phonebook (){
 
     }
-    public void list() {
-        if (this.contacts.empty()){
-            System.out.println("Empty");
+    public void add(String name, String surname, String number, int id){
+        Contacts c = new Contacts(name, surname,number,id);
+        if (Contacts.contains(c)){
+            throw new RuntimeException("Contact already exist");
+        }else {
+            Contacts.add(c);
         }
-        else {
-
-            for (Enumeration<Contact> e = this.contacts.elements();e.hasMoreElements();){
-                Contact contact = e.nextElement();
-                System.out.println(contact.getName() +", " + contact.getNumber());
-            }
-
-        }
-    }
-    public void add(){
-        System.out.println("Contact added");
-
     }
     public void show(){
         System.out.println("Look, this are your contacts");
@@ -29,7 +22,15 @@ public class Phonebook {
     public void edit(){
         System.out.println("Edit a contact");
     }
-    public void delete(){
-        System.out.println("Delete it now");
+    public void delete(Contacts c){
+        if (Contacts.contains(c)){
+            Contacts.remove(c);
+        }else {
+            throw new RuntimeException("You dont have this contact in Phonebook")
+        }
+    }
+
+    public void list() {
+        System.out.println("This is you your Phonebook");
     }
 }

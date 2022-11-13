@@ -1,11 +1,14 @@
-public class Contact {
+public class Contacts {
     private String name;
+    private String surname;
     private String number;
-    int id = 0;
+    private int id = 0;
 
-    public Contact(String name, String number) {
+    public Contacts(String name, String surname, String number, int id) {
         this.name = name;
+        this.surname = surname;
         this.number = number;
+        this.id = id;
     }
 
     public String getName() {

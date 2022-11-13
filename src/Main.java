@@ -15,7 +15,7 @@ public class Main {
                     phonebook.list();
                     break;
                 case 2:
-                    phonebook.add();
+                    phonebook.add(String name,String surname,String number, int id);
                     break;
                 case 3:
                     phonebook.show();
