@@ -29,6 +29,6 @@ public class Contacts {
 
     @Override
     public String toString() {
-        return "Phonebook entry [name="+ name + ", phone number=" + number +"]";
+        return id +"Phonebook entry [name="+ name + ", phone number=" + number +"]";
     }
 }

@@ -26,7 +26,7 @@ public class Phonebook {
         if (Contacts.contains(c)){
             Contacts.remove(c);
         }else {
-            throw new RuntimeException("You dont have this contact in Phonebook")
+            throw new RuntimeException("You dont have this contact in Phonebook");
         }
     }
 
